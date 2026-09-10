@@ -1,0 +1,24 @@
+[package]
+name = "fractal-fuse"
+version = "0.6.0"
+edition = "2024"
+description = "Async FUSE library using io_uring (FUSE_OVER_IO_URING) and compio runtime for high-performance userspace filesystems on Linux 6.14+"
+license = "Apache-2.0"
+repository = "https://github.com/fractalbits-labs/fractalbits-main"
+readme = "README.md"
+keywords = ["fuse", "io-uring", "filesystem", "async", "linux"]
+categories = ["filesystem", "asynchronous", "os::linux-apis"]
+
+[dependencies]
+io-uring = "0.7.12"
+compio-runtime = { version = "0.12", features = ["time"] }
+compio-driver = { version = "0.12", features = ["io-uring-sqe128"] }
+libc = "0.2"
+nix = { version = "0.31", features = ["fs", "socket", "uio"] }
+tracing = "0.1"
+which = "8"
+tokio-util = "0.7.18"
+futures-util = "0.3"
+
+[dev-dependencies]
+tracing-subscriber = "0.3"
