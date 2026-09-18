@@ -2,7 +2,6 @@
 
 [![crates.io](https://img.shields.io/crates/v/fractal-fuse.svg)](https://crates.io/crates/fractal-fuse)
 [![docs.rs](https://docs.rs/fractal-fuse/badge.svg)](https://docs.rs/fractal-fuse)
-[![source](https://img.shields.io/badge/source-GitHub-blue)](https://github.com/fractalbits-labs/fractal-fuse)
 
 An async FUSE (Filesystem in Userspace) library for Linux, built on
 **io_uring** and the **compio** async runtime. It uses the

@@ -4,6 +4,17 @@ All notable changes to `fractal-fuse` will be documented in this file.
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-09-17
+
+### Fixed
+- `Session::run` now cancels an in-flight `Filesystem` callback on
+  shutdown instead of waiting for it, so a worker blocked in a slow or
+  hung callback no longer keeps the session alive.
+
+### Changed
+- The crate moved to its own repository,
+  <https://github.com/fractalbits-labs/fractal-fuse>.
+
 ## [0.6.0] - 2026-07-09
 
 ### Changed
